@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Overview (72261) · PRIME Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Inter:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></symbol>
+  <symbol id="i-account-box-outline" viewBox="0 0 24 24"><path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M16.5,16.25C16.5,14.75 13.5,14 12,14C10.5,14 7.5,14.75 7.5,16.25V17H16.5M12,12.25A2.25,2.25 0 0,0 14.25,10A2.25,2.25 0 0,0 12,7.75A2.25,2.25 0 0,0 9.75,10A2.25,2.25 0 0,0 12,12.25Z"/></symbol>
+  <symbol id="i-chevron-up" viewBox="0 0 24 24"><path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></symbol>
+  <symbol id="i-chart-line" viewBox="0 0 24 24"><path d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"/></symbol>
+  <symbol id="i-poll" viewBox="0 0 24 24"><path d="M3,22V8H7V22H3M10,22V2H14V22H10M17,22V14H21V22H17Z"/></symbol>
+  <symbol id="i-chart-box-outline" viewBox="0 0 24 24"><path d="M9 17H7V10H9V17M13 17H11V7H13V17M17 17H15V13H17V17M19 19H5V5H19V19.1M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"/></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><path d="M21.71 20.29L20.29 21.71A1 1 0 0 1 18.88 21.71L7 9.85A3.81 3.81 0 0 1 6 10A4 4 0 0 1 2.22 4.7L4.76 7.24L5.29 6.71L6.71 5.29L7.24 4.76L4.7 2.22A4 4 0 0 1 10 6A3.81 3.81 0 0 1 9.85 7L21.71 18.88A1 1 0 0 1 21.71 20.29M2.29 18.88A1 1 0 0 0 2.29 20.29L3.71 21.71A1 1 0 0 0 5.12 21.71L10.59 16.25L7.76 13.42M20 2L16 4V6L13.83 8.17L15.83 10.17L18 8H20L22 4Z"/></symbol>
+  <symbol id="i-account-multiple-outline" viewBox="0 0 24 24"><path d="M13.07 10.41A5 5 0 0 0 13.07 4.59A3.39 3.39 0 0 1 15 4A3.5 3.5 0 0 1 15 11A3.39 3.39 0 0 1 13.07 10.41M5.5 7.5A3.5 3.5 0 1 1 9 11A3.5 3.5 0 0 1 5.5 7.5M7.5 7.5A1.5 1.5 0 1 0 9 6A1.5 1.5 0 0 0 7.5 7.5M16 17V19H2V17S2 13 9 13 16 17 16 17M14 17C13.86 16.22 12.67 15 9 15S4.07 16.31 4 17M15.95 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13Z"/></symbol>
+  <symbol id="i-magnify" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/></symbol>
+  <symbol id="i-bell-outline" viewBox="0 0 24 24"><path d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z"/></symbol>
+  <symbol id="i-hammer-wrench" viewBox="0 0 24 24"><path d="M13.78 15.3L19.78 21.3L21.89 19.14L15.89 13.14L13.78 15.3M17.5 10.1C17.11 10.1 16.69 10.05 16.36 9.91L4.97 21.25L2.86 19.14L10.27 11.74L8.5 9.96L7.78 10.66L6.33 9.25V12.11L5.63 12.81L2.11 9.25L2.81 8.55H5.62L4.22 7.14L7.78 3.58C8.95 2.41 10.83 2.41 12 3.58L9.89 5.74L11.3 7.14L10.59 7.85L12.38 9.63L14.2 7.75C14.06 7.42 14 7 14 6.63C14 4.66 15.56 3.11 17.5 3.11C18.09 3.11 18.61 3.25 19.08 3.53L16.41 6.2L17.91 7.7L20.58 5.03C20.86 5.5 21 6 21 6.63C21 8.55 19.45 10.1 17.5 10.1Z"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></symbol>
+  <symbol id="i-close-circle" viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"/></symbol>
+  <symbol id="i-menu-down" viewBox="0 0 24 24"><path d="M7,10L12,15L17,10H7Z"/></symbol>
+  <symbol id="i-filter-remove-outline" viewBox="0 0 24 24"><path d="M14.73,20.83L17.58,18L14.73,15.17L16.15,13.76L19,16.57L21.8,13.76L23.22,15.17L20.41,18L23.22,20.83L21.8,22.24L19,19.4L16.15,22.24L14.73,20.83M13,19.88C13.04,20.18 12.94,20.5 12.71,20.71C12.32,21.1 11.69,21.1 11.3,20.71L7.29,16.7C7.06,16.47 6.96,16.16 7,15.87V10.75L2.21,4.62C1.87,4.19 1.95,3.56 2.38,3.22C2.57,3.08 2.78,3 3,3V3H17V3C17.22,3 17.43,3.08 17.62,3.22C18.05,3.56 18.13,4.19 17.79,4.62L13,10.75V19.88M5.04,5L9,10.06V15.58L11,17.58V10.05L14.96,5H5.04Z"/></symbol>
+</svg>
+
+<div class="app">
+  <nav class="sb" aria-label="Primary">
+    <div class="sb__head">
+      <div class="sb__brand">PRIME <span>ADMIN</span></div>
+      <svg class="i sb__collapse" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
+    </div>
+    <div class="sb__section">
+      <div class="sb__item sb__item--active"><svg class="i" aria-hidden="true"><use href="#i-account-box-outline"></use></svg><span>Program Management</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-up"></use></svg></div>
+      <div class="sb__sub">
+        <div class="sb__sub-item sb__sub-item--active">Projects</div>
+        <div class="sb__sub-item">Activities</div>
+      </div>
+    </div>
+    <div class="sb__section"><div class="sb__item"><svg class="i" aria-hidden="true"><use href="#i-chart-line"></use></svg><span>Marketing</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg></div></div>
+    <div class="sb__section"><div class="sb__item"><svg class="i" aria-hidden="true"><use href="#i-poll"></use></svg><span>Outcomes</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg></div></div>
+    <div class="sb__section"><div class="sb__item"><svg class="i" aria-hidden="true"><use href="#i-chart-box-outline"></use></svg><span>Reporting</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg></div></div>
+    <div class="sb__section"><div class="sb__item"><svg class="i" aria-hidden="true"><use href="#i-tools"></use></svg><span>Tools</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg></div></div>
+    <div class="sb__section"><div class="sb__item"><svg class="i" aria-hidden="true"><use href="#i-account-multiple-outline"></use></svg><span>User Manager</span><svg class="i sb__chev" aria-hidden="true"><use href="#i-chevron-down"></use></svg></div></div>
+  </nav>
+
+  <div class="main">
+    <header class="topbar">
+      <label class="search">
+        <input type="search" placeholder="Search for [Project]">
+        <svg class="i" aria-hidden="true"><use href="#i-magnify"></use></svg>
+      </label>
+      <button class="pa-btn pa-btn--primary" type="button"><svg class="i" aria-hidden="true"><use href="#i-plus"></use></svg><span>Create</span></button>
+      <div class="spacer"></div>
+      <button class="topbar__btn" type="button" title="Notifications"><svg class="i" aria-hidden="true"><use href="#i-bell-outline"></use></svg></button>
+      <div class="avatar" title="Douglas Benjamin">DB</div>
+    </header>
+
+    <div class="page-head">
+      <div class="page-head__main">
+        <h1 class="pa-page-title">Projects</h1>
+        <div class="meta">
+          <span><span class="meta__k">Supporters</span> <span class="meta__v">Merck · Gilead</span></span>
+          <span><span class="meta__k">Launch Date</span> <span class="meta__v">January 23, 2026</span></span>
+          <span><span class="meta__k">Activities</span> <span class="meta__v">18</span></span>
+          <span><span class="meta__k">Status</span> <span class="meta__v meta__v--ok">Active</span></span>
+        </div>
+      </div>
+      <div class="presence">
+        <span class="presence__stack" id="presence"></span>
+        <span class="presence__label">3 people here</span>
+      </div>
+    </div>
+
+    <div class="pa-tabs" id="tabs" role="tablist"></div>
+
+    <main class="content">
+      <section class="placeholder" id="view-other" hidden>
+        <svg class="i placeholder__icon" aria-hidden="true"><use href="#i-hammer-wrench"></use></svg>
+        <div class="placeholder__title" id="other-title"></div>
+        <p class="placeholder__text">This tab lives in the Project Details prototype. Return to Overview to keep exploring.</p>
+        <button class="pa-btn pa-btn--secondary" type="button" id="back-overview"><span>Back to Overview</span></button>
+      </section>
+
+      <section class="overview" id="view-overview">
+        <div class="overview__main">
+          <h2 class="pa-screen-title">Project Overview (72261)</h2>
+          <div class="project-name">The Science of Scarcity: Translating Innovation to HIV Practice in an Era of Less: 12th Annual Hot Topics in HIV Series</div>
+        </div>
+        <aside class="overview__rail">
+          <div class="pa-card feed">
+            <div class="feed__head">
+              <span class="feed__title"><svg class="i" aria-hidden="true"><use href="#i-history"></use></svg>Recent Activity</span>
+              <button class="link-btn" type="button" data-open-log>View full log<svg class="i" aria-hidden="true"><use href="#i-chevron-right"></use></svg></button>
+            </div>
+            <div id="feed"></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">1997-2026 PRIME Education, LLC</footer>
+  </div>
+</div>
+
+<div class="drawer" id="log" hidden>
+  <div class="drawer__scrim" data-close-log></div>
+  <div class="chp" role="dialog" aria-modal="true" aria-labelledby="chp-title">
+    <div class="chp__head">
+      <div>
+        <div class="chp__title" id="chp-title">Change History</div>
+        <div class="chp__sub">
+          <span class="chp__rec">Project</span>
+          <span class="chp__code">72261</span>
+          <span class="chp__dim">·</span>
+          <span class="chp__dim" id="chp-count"></span>
+        </div>
+      </div>
+      <button class="iconbtn" type="button" title="Close" data-close-log><svg class="i i--24" aria-hidden="true"><use href="#i-close"></use></svg></button>
+    </div>
+    <div class="chp__rule"></div>
+
+    <div class="chp__filters">
+      <div class="chp__row">
+        <label class="chp__search">
+          <svg class="i" aria-hidden="true"><use href="#i-magnify"></use></svg>
+          <input id="chp-q" type="text" placeholder="Search user, area, field, value, or note" autocomplete="off">
+          <button class="iconbtn iconbtn--sm" type="button" id="chp-q-clear" title="Clear search" hidden><svg class="i" aria-hidden="true"><use href="#i-close-circle"></use></svg></button>
+        </label>
+        <div class="vf vf--user">
+          <label for="chp-user">User</label>
+          <input class="vf__ctrl" id="chp-user" type="text" autocomplete="off" value="All users">
+          <svg class="i vf__icon" aria-hidden="true"><use href="#i-menu-down"></use></svg>
+          <div class="menu" id="chp-user-list" hidden></div>
+        </div>
+      </div>
+      <div class="chp__row chp__row--wrap">
+        <div class="vf vf--date"><label for="chp-from">From Date</label><input class="vf__ctrl" id="chp-from" type="date"></div>
+        <div class="vf vf--date"><label for="chp-to">To Date</label><input class="vf__ctrl" id="chp-to" type="date"></div>
+        <span class="chp__vrule"></span>
+        <div class="chips" id="chp-chips"></div>
+        <span class="spacer"></span>
+        <button class="clear-btn" type="button" id="chp-clear" hidden><svg class="i" aria-hidden="true"><use href="#i-filter-remove-outline"></use></svg>Clear filters</button>
+      </div>
+    </div>
+
+    <div class="chp__list" id="chp-list"></div>
+
+    <div class="chp__foot">
+      <span>Read only. Details and Planning log one entry per save; Faculty and Files group a session's auto-saved changes.</span>
+      <button class="pa-btn pa-btn--primary" type="button" data-close-log><span>Close</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
